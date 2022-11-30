@@ -190,3 +190,44 @@ span {
   margin: 0px 0px;
   color: #636364;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas: 
+      "featuredProduct featuredProduct"
+      "secondaryProduct CTA";
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "bookcases"
+      "bedroom"
+      "patio"
+      "couches"
+      "desks";
+  }
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #CTA img {
+    width: 18px;
+  }
+}
