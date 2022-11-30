@@ -33,6 +33,10 @@ body {
   cursor: pointer;
 }
 
+#CTA a {
+  text-decoration: none;
+}
+
 #headline {
   background-color: rgba(255,255,255,0.8);
   border-bottom: 5px solid #FF6200;
@@ -173,6 +177,11 @@ h4 {
   font-size: 22px;
 }
 
+span {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
 
 #headline p {
   max-width: 350px;
