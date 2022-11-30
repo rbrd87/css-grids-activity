@@ -3,15 +3,56 @@ body {
   }
   
   /* Grid CSS */
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: 
+        "featuredProduct secondaryProduct"
+        "featuredProduct cta";
+  }
   
-  
-  /* Category Grid CSS */
-  
-  
-  
-  
+ #featuredProduct {
+    grid-area: featuredProduct;
+    background-image: url(../images/furniture1.jpg);
+ }
+
+ #secondaryProduct {
+    grid-area: secondaryProduct;
+    background-image: url(../images/furniture2.jpg);
+ }
+
+ #CTA {
+    grid-area: cta;
+    background-image: url(../images/woodbg.png);
+    justify-content: space-around;
+    cursor: pointer;
+ }
+ 
+ .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+ }
+
+ #headline {
+    border-bottom: 5px solid #FF6200;
+    padding: 25px;
+    background-color: rgba(255,255,255,0.9);
+    position: absolute;
+    max-width: 550px;
+    top: 100px;
+    right: -40px;
+    z-index: 1;
+ }
+
   /* Navigation CSS */
-  /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
   #navBar {
     display: flex;
     flex-direction: row;
